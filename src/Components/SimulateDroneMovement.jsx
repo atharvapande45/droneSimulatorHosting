@@ -349,7 +349,11 @@ const SimulateDroneMovement = () => {
                                 />
                             </label>
                             {droneInfo[0].pause ? (
-                                <button id="1pause" onClick={handlePause}>
+                                <button
+                                    id="1pause"
+                                    onClick={handlePause}
+                                    style={{ backgroundColor: "orange" }}
+                                >
                                     Pause
                                 </button>
                             ) : (
@@ -397,7 +401,11 @@ const SimulateDroneMovement = () => {
                                 />
                             </label>
                             {droneInfo[1].pause ? (
-                                <button id="2pause" onClick={handlePause}>
+                                <button
+                                    id="2pause"
+                                    onClick={handlePause}
+                                    style={{ backgroundColor: "orange" }}
+                                >
                                     Pause
                                 </button>
                             ) : (
@@ -445,7 +453,11 @@ const SimulateDroneMovement = () => {
                                 />
                             </label>
                             {droneInfo[2].pause ? (
-                                <button id="3pause" onClick={handlePause}>
+                                <button
+                                    id="3pause"
+                                    onClick={handlePause}
+                                    style={{ backgroundColor: "orange" }}
+                                >
                                     Pause
                                 </button>
                             ) : (
