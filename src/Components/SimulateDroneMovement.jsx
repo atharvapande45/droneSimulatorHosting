@@ -150,7 +150,7 @@ const SimulateDroneMovement = () => {
             return newArray;
         });
 
-        const steps = 100;
+        const steps = 1000;
         const stepLat = (latitude - center.lat) / steps;
         const stepLng = (longitude - center.lng) / steps;
         let currentLat;
