@@ -168,6 +168,15 @@ const SimulateDroneMovement = () => {
             currentLng = center.lng;
         }
 
+        setDroneInfo((prevDroneInfo) => {
+            const newDroneInfo = [...prevDroneInfo];
+            newDroneInfo[id] = {
+                ...newDroneInfo[id],
+                marker: { lat: currentLat, lng: currentLng },
+            };
+            return newDroneInfo;
+        });
+
         const interval = setInterval(() => {
             currentLat += stepLat;
             currentLng += stepLng;
