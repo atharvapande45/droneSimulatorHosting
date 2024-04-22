@@ -63,7 +63,6 @@ const SimulateDroneMovement = () => {
             completed: true,
         },
     ]);
-    console.log(droneInfo);
 
     const handleChange = (e) => {
         let id;
@@ -151,8 +150,7 @@ const SimulateDroneMovement = () => {
             return newArray;
         });
 
-        // Simulate drone movement
-        const steps = 1000; // Number of steps to simulate
+        const steps = 100;
         const stepLat = (latitude - center.lat) / steps;
         const stepLng = (longitude - center.lng) / steps;
         let currentLat;
@@ -167,7 +165,7 @@ const SimulateDroneMovement = () => {
         } else {
             currentLng = center.lng;
         }
-        //
+
         setDroneInfo((prevDroneInfo) => {
             const newDroneInfo = [...prevDroneInfo];
             newDroneInfo[id] = {
@@ -491,7 +489,7 @@ const SimulateDroneMovement = () => {
                         onClick={() => setStart(true)}
                         disabled={!isLoaded}
                         style={{
-                            backgroundColor: "#4caf50" /* Green */,
+                            backgroundColor: "#4caf50",
                             border: "1px solid #4caf50",
                             borderRadius: "5px",
                             color: "white",
