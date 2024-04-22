@@ -167,7 +167,7 @@ const SimulateDroneMovement = () => {
         } else {
             currentLng = center.lng;
         }
-
+        //
         setDroneInfo((prevDroneInfo) => {
             const newDroneInfo = [...prevDroneInfo];
             newDroneInfo[id] = {
